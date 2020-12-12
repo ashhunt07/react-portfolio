@@ -1,0 +1,37 @@
+.card {
+    border-radius: 2px;
+    height: auto;
+    margin: 1em auto;
+    width: 325px;
+    color: #404e5a;
+    display: flex;
+}
+
+.card > .img-container {
+    height: 60%;
+    overflow: hidden;
+}
+
+.card > .title-container{
+    color: #daba2c !important;
+
+}
+
+.card img {
+    width: 100%;
+}
+
+.card > .content {
+    font-size: 15px;
+
+}
+
+.card > .content > ul {
+    list-style-type: none;
+    padding: 1em 5% 0;
+
+}
+
+.card > .content > ul > li {
+    margin-top: 1em;
+}

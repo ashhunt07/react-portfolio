@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "title": "RapSheet",
+    "image": "/Ashley-H_white.png",
+    "description": "A web application that helps bands find venues and for venues to find bands! You can create your profile, views bands/venues and check out their calendar to see availability. Ready to book? Just use the contact form!",
+    "live": "Engineer",
+    "repo": "Engineer"
+
+  },
+  {
+    "id": 2,
+    "name": "Maureen Woods",
+    "image": "https://randomuser.me/api/portraits/women/28.jpg",
+    "title": "Developer",
+    "location": "Dallas",
+    "email": "maureen.woods@example.com",
+    "phone": "(798)-960-2018"
+  },
+  {
+    "id": 3,
+    "name": "Tony Cole",
+    "image": "https://randomuser.me/api/portraits/men/7.jpg",
+    "title": "Designer",
+    "location": "Las Angeles",
+    "email": "tony.cole@example.com",
+    "phone": "(798)-960-2018"
+  },
+  {
+    "id": 4,
+    "name": "Maddison Brown",
+    "image": "https://randomuser.me/api/portraits/women/45.jpg",
+    "title": "Developer",
+    "location": "Dallas",
+    "email": "maddison.brown@example.com",
+    "phone": "(052)-657-4522"
+  },
+  {
+    "id": 5,
+    "name": "Henrick Niedermerier",
+    "image": "https://randomuser.me/api/portraits/women/7.jpg",
+    "title": "Developer",
+    "location": "New York",
+    "email": "henrike.niedermeier@example.com",
+    "phone": "(798)-960-2018"
+  },
+  {
+    "id": 6,
+    "name": "Laissa Oliveria",
+    "image": "https://randomuser.me/api/portraits/women/65.jpg",
+    "title": "Designer",
+    "location": "Dallas",
+    "email": "laissa.oliveira@example.com",
+    "phone": "(798)-960-2018"
+  },
+  {
+    "id": 7,
+    "name": "Oliver Kinnunen",
+    "image": "https://randomuser.me/api/portraits/men/78.jpg",
+    "title": "Engineer",
+    "location": "New York",
+    "email": "oliver.kinnunen@example.com",
+    "phone": "(834)-933-2018"
+  },
+  {
+    "id": 8,
+    "name": "Tilde Christiansen",
+    "image": "https://randomuser.me/api/portraits/women/36.jpg",
+    "title": "Project Manager",
+    "location": "San Antonio",
+    "email": "tilde.christiansen@example.com",
+    "phone": "(733)-245-2435"
+  }
+
+]
