@@ -1,7 +1,7 @@
 
 //import react
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import './App.css';
 
@@ -20,16 +20,16 @@ export default function App() {
   return (
     <div className ="page-container">
       <div className="content-wrap">
-    <Router>
+    <Router basename="/">
       <Navigation />
       <Switch>
-        <Route path={["/", "/about"]}>
+        <Route exact path="/">
           <About />
         </Route>
-        <Route exact path="/portfolio">
+        <Route path="/portfolio">
           <Portfolio />
         </Route>
-        <Route exact path="/resume">
+        <Route path="/resume">
           <Resume />
         </Route>
       </Switch>

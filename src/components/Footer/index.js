@@ -9,10 +9,10 @@ export default function Header () {
                     <li className="nav-item"> Connect with me:
                     </li>
                     <li class="nav-item list-inline-item">
-                        <a className="nav-link" href="https://github.com/ashhunt07">LinkedIn</a>
+                        <a className="nav-link" href="https://github.com/ashhunt07" target="_blank" rel="noreferrer">LinkedIn</a>
                     </li>
                     <li class="nav-item list-inline-item">
-                        <a className="nav-link" href="https://github.com/ashhunt07">GitHub</a>
+                        <a className="nav-link" href="https://github.com/ashhunt07" target="_blank" rel="noreferrer">GitHub</a>
                     </li>
                 </ul>
     </footer>

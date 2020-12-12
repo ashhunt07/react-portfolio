@@ -9,7 +9,7 @@ export default function Navigation() {
     return (
 
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#about">
+        <Navbar.Brand href="#/">
             <img
             src="/images/Ashley-H_white.png"
             width="auto"
@@ -24,12 +24,17 @@ export default function Navigation() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">
-              <Nav.Link className="navLink" href="/#/about">About</Nav.Link>
-              <Nav.Link className="navLink" href="/#/portfolio">Portfolio</Nav.Link>
-              <Nav.Link className="navLink" href="/#/resume">Resume</Nav.Link>
+              <Nav.Link className="navLink" href="#/">About</Nav.Link>
+              <Nav.Link className="navLink" href="#/portfolio">Portfolio</Nav.Link>
+              <Nav.Link className="navLink" href="#/resume">Resume</Nav.Link>
             </Nav>
           </Navbar.Collapse>
       </Navbar>
+
+
+
+
+        
 
     );
 }
