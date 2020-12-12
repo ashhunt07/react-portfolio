@@ -1,10 +1,9 @@
 
-import './App.css';
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
-
-
 //import react
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import './App.css';
 
 //import components
 import Navigation from "./components/Navigation";
@@ -17,25 +16,26 @@ import Resume from "./pages/Resume";
 
 
 //Handles page load
-function App() {
+export default function App() {
   return (
-    <Router basename="/">
+    <div className ="page-container">
+      <div className="content-wrap">
+    <Router>
       <Navigation />
       <Switch>
-        <Route exact path="/">
+        <Route exact path={["/", "/about"]}>
           <About />
         </Route>
-        <Route path="/portfolio">
+        <Route exact path="/portfolio">
           <Portfolio />
         </Route>
-        <Route path="/resume">
+        <Route exact path="/resume">
           <Resume />
         </Route>
       </Switch>
-      <Footer />
-    </Router>
+  </Router>
+  </div>
+  <Footer />
+  </div>
   );
 }
-
-
-export default App;

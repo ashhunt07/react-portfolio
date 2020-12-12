@@ -1,0 +1,16 @@
+/* Main Navigation Styling */
+
+.navbar{
+    background-color: #363638;
+    padding: .75em 5%;
+}
+
+.navLink {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.navLink:hover{
+    color: #daba2c !important;
+    text-decoration: none;
+}
