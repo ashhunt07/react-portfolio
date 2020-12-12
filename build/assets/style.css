@@ -1,0 +1,282 @@
+/* Main Body */
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Universal Text Styling */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+    color: #444;
+}
+
+h2 {
+    font-family: 'Poiret One', cursive;
+    padding-bottom: .5em;
+}
+
+.portLink {
+    color: #5D256E;
+    font-weight: 500;
+}
+
+.portLink:hover {
+    color: #55046E;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: #fefefe;
+    padding: 0 5%;
+}
+
+
+/* Main Navigation Styling */
+
+nav,
+header {
+    background-color: #363638;
+}
+
+.nav {
+    margin-top: 1em;
+}
+
+nav .logo {
+    width: 40px;
+}
+
+nav .nav-brand {
+    color: #fefefe;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Poiret One', cursive;
+    margin-left: 1%;
+}
+
+nav .nav-brand:hover {
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #fefefe;
+}
+
+.nav-link:hover {
+    color: #EDB020;
+}
+
+.nav-item,
+.nav-link {
+    width: 100%;
+    text-align: right;
+    padding-top: .5em;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(237, 176, 32)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler,
+.custom-toggler:active,
+.custom-toggler:focus {
+    border: 0px!important;
+    outline: 0px!important;
+    box-shadow: 0px!important;
+}
+
+
+/* Main Content */
+
+.row {
+    width: 100%;
+    padding: 1em 0;
+    margin: 0 auto;
+}
+
+.portRow {
+    width: 90%;
+    padding: 2em 0;
+    margin: 0 auto;
+}
+
+section {
+    padding: 5em 0 2em 0;
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+}
+
+.introduction {
+    border: none;
+    width: 100%;
+}
+
+.introBody {
+    padding-top: 0;
+}
+
+.card-img {
+    margin-bottom: 1em;
+}
+
+
+/* Social Icons */
+
+.social {
+    max-width: 50px;
+    display: inline-block;
+    padding-right: 2%;
+}
+
+
+/* Form Styles */
+
+form {
+    padding: 1em 0 0;
+}
+
+form .form-label {
+    color: #2c5058;
+}
+
+form .form-control {
+    border: 1px solid #ddecef;
+}
+
+form .form-control::placehoålder {
+    color: #a9a9a9;
+}
+
+
+/* Button Styles */
+
+.btn-primary {
+    background-color: #5D256E;
+    border: 0px;
+    padding: 5px 5%;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #55046E;
+    border: 0px!important;
+    outline: 0px!important;
+    box-shadow: 0px!important;
+}
+
+
+/* Card Styles */
+
+.card-columns {
+    column-count: 1;
+}
+
+.portItem {
+    border: none;
+    -webkit-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.boxPad {
+    padding: .5em 2.5%;
+}
+
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: .75em 0;
+    background-color: #363638;
+    color: #a9a9a9;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    /* About Image */
+    .card-columns {
+        column-count: 2;
+    }
+    .section {
+        width: 95%!important;
+        margin: 0 2.5%;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    /* About Image */
+    .card-columns {
+        column-count: 2;
+    }
+    .section {
+        width: 95%;
+        margin: 0 5%;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .nav-item,
+    .nav-link {
+        width: auto;
+        padding-top: 0;
+        display: inline-block;
+    }
+    .section {
+        width: 100%;
+        margin: 0 5%;
+    }
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .section {
+        width: 100%;
+        margin: 0 5%;
+    }
+    .nav-item,
+    .nav-link {
+        width: auto;
+        text-align: right;
+        padding-top: 0;
+    }
+    form {
+        width: 90%;
+    }
+    .card-columns {
+        column-count: 3;
+    }
+}
