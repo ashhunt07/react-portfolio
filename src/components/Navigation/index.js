@@ -9,7 +9,7 @@ export default function Navigation() {
     return (
 
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="#about">
             <img
             src="/images/Ashley-H_white.png"
             width="auto"
