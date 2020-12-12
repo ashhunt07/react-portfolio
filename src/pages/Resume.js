@@ -3,6 +3,6 @@ import React from "react";
 
 export default function Resume () {
     return(
-        <h1>Hello About the World</h1>
+        <h1>Hello Resume of the World</h1>
         )
 }
