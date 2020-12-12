@@ -12,7 +12,7 @@ export default function Navigation() {
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand href="#/">
             <img
-            src="images/Ashley-H_white.png"
+            src="/images/Ashley-H_white.png"
             width="auto"
             height="40"
             className="d-inline-block align-top logo pr-3"
