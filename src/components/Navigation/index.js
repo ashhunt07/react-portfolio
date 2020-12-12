@@ -11,7 +11,7 @@ export default function Navigation() {
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand href="#/">
             <img
-            src={process.env.PUBLIC_URL + "/images/Ashley-H_white.png"}
+            src={process.env.PUBLIC_URL + "/images/Ashley-H_white.png" || "/images/Ashley-H_white.png"}
             width="auto"
             height="40"
             className="d-inline-block align-top logo pr-3"
