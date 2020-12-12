@@ -23,7 +23,7 @@ export default function App() {
     <Router>
       <Navigation />
       <Switch>
-        <Route exact path={["/", "/about"]}>
+        <Route path={["/", "/about"]}>
           <About />
         </Route>
         <Route exact path="/portfolio">
