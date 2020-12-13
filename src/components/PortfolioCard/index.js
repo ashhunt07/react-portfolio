@@ -15,9 +15,9 @@ function PortfolioCard(props) {
             alt="Ashley logo" /> */}
         </div>
         <div className="title-container">
-            <h3 className="text-center mt-2">
+            <h2 className="text-center mt-2">
                 {props.title}
-            </h3>
+            </h2>
         </div>
 
     <div className="content">
@@ -26,13 +26,8 @@ function PortfolioCard(props) {
             <span>{props.description}</span>
         </li>
         <li>
-            <span>{props.live}</span>
-        </li>
-        <li>
-            <span>{props.repo}</span>
-        </li>
-        <li>
-            <span>{props.phone}</span>
+            <a href={props.live} target="_blank" rel="noreferrer" className="btn mr-3 mt-2">View Project</a>
+            <a href={props.repo} target="_blank" rel="noreferrer" className="btn mt-2">View Repo</a>
         </li>
         </ul>
     </div>

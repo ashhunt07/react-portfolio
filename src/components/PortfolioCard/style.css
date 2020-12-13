@@ -1,19 +1,19 @@
 .card {
     border-radius: 2px;
     height: auto;
-    margin: 1em auto;
-    width: 325px;
+    margin: 1em auto 0;
+    width: 400px;
     color: #404e5a;
     display: flex;
 }
 
 .card > .img-container {
-    height: 60%;
-    overflow: hidden;
+    margin-bottom: .5em;
 }
 
 .card > .title-container{
-    color: #daba2c !important;
+    color: #1e3142 !important;
+    padding: 0 5% 0;
 
 }
 
@@ -28,10 +28,20 @@
 
 .card > .content > ul {
     list-style-type: none;
-    padding: 1em 5% 0;
+    padding: 0 5% 0;
 
 }
 
 .card > .content > ul > li {
-    margin-top: 1em;
+    margin: .5em 0 0;
+}
+
+.btn{
+    background-color:#1e3142 ;
+    color: #fff;
+}
+
+.btn:hover{
+    background-color:#1d486e ;
+    color: #fff;
 }
