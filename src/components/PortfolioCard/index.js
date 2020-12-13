@@ -10,9 +10,6 @@ function PortfolioCard(props) {
 
             <img alt={props.title} src={props.image} />
 
-
-            {/* <img src="process.env.PUBLIC_URL + {props.image} || { props.image }"
-            alt="Ashley logo" /> */}
         </div>
         <div className="title-container">
             <h2 className="text-center mt-2">

@@ -1,7 +1,7 @@
 .card {
     border-radius: 2px;
     height: auto;
-    margin: 1em auto 0;
+    margin: 1em auto;
     width: 400px;
     color: #404e5a;
     display: flex;
@@ -14,7 +14,6 @@
 .card > .title-container{
     color: #1e3142 !important;
     padding: 0 5% 0;
-
 }
 
 .card img {
