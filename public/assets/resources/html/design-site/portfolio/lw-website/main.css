@@ -1,0 +1,899 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Meyer Reset CSS */
+
+img {
+	max-width: 100%; /*makes images scale with flexible grids*/
+	display: block; /*removes tiny space added in some browsers below images */
+}
+iframe {
+	max-width: 100%; /*makes images scale with flexible grids*/
+	display: block; /*removes tiny space added in some browsers below images */
+}
+
+/* Your CSS Starts here */
+
+/* Place google fonts code here */
+/* Place google fonts code here */
+/* Place google fonts code here */
+/* Place google fonts code here */
+@import url('https://fonts.googleapis.com/css?family=Hind+Guntur|Quicksand');
+/* Place google fonts code here */
+/* Place google fonts code here */
+/* Place google fonts code here */
+/* Place google fonts code here */
+
+html, body{
+    font-family: 'Hind Guntur', sans-serif;;
+    font-size: 16px;
+	line-height: 1.5em;
+	background-color:#ffffff;
+}
+
+/* Divs start here */
+/* Divs start here */
+/* Divs start here */
+/* Divs start here */
+/* Divs start here */
+/* Divs start here */
+
+h1,h2,h3,h4,h5,a,p,li{
+    font-style:normal;
+    font-weight: 400;
+    text-decoration:none;
+    /*color: #353535;*/
+	color:#333333;
+}
+
+p{
+	line-height: 150%;
+    
+    }
+
+h1{
+	font-family: 'Quicksand', sans-serif;
+}
+
+h2{
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+h3{
+   
+}
+
+h4{}
+
+h5{
+
+}
+
+h6{
+  
+}
+
+h6 a {
+	color:#5C5C5C;
+}
+
+ #wrapper{
+    overflow: hidden !important;
+    width:100% !important;
+    }
+
+main{
+	overflow: hidden;
+	width: 100%;ß
+}
+
+header nav{
+	background-color: #ffffff;
+	overflow: hidden;
+	padding: .5em 2%;
+}
+
+header h2{
+	font-size: 1.5em;
+	float:left;
+	padding: 0 2.5% 0 5%;
+}
+
+header p{
+	font-size: .75em;
+	padding: .3em 0 0 0;
+}
+
+
+.logo{
+	width: 50%;
+	float:left;
+}
+
+nav ul, nav li{
+	float:right;
+	padding: .25em 2%;
+}
+
+
+.viewM{
+	display:block;
+}
+
+.viewD{
+	display:none;
+}
+
+
+.headImg{
+	position: relative;
+}
+
+	
+#container {
+  position: relative;
+  width: 100%;
+top:0;
+
+}
+
+.hid1{
+	position: absolute;
+	z-index:100;
+	top:2.5em;
+	left: 0%;
+	width: 10%;
+	height: 3em;
+	padding: 2em 10%;
+}
+
+.hid2{
+	position: absolute;
+	z-index:100;
+	top:0em;
+	left: 35%;
+	width: 10%;
+	height: 3em;
+	padding: 2em 10%;
+}
+
+.hid3{
+	position: absolute;
+	z-index:100;
+	bottom:0em;
+	left: 13%;
+	width: 10%;
+	height: 3em;
+	padding: 2em 10%;
+}
+
+.hid4{
+	position: absolute;
+	z-index:100;
+	bottom:1em;
+	right: 12%;
+	width: 10%;
+	height: 3em;
+	padding: 2em 10%;
+}
+
+
+.top{
+	position: absolute;
+	padding: .5em 5% 0 0;
+	width: 60%;
+	right: 0;
+}
+
+
+
+.top h2,.top img{
+	float:right;
+}
+
+.top img{
+	padding: 0 5%;
+}
+
+.top h2{
+	font-size: 2em;
+	padding: 0 2% 0 0;
+
+}
+
+.top p{
+	clear:both;
+	float:right;
+	font-size: .8em;
+	width: 88%;
+}
+
+
+.moreProd{
+	position: relative;
+}
+
+.topT{
+	position: absolute;
+	width: 80%;
+	right: 0;
+	top: 50%;
+}
+
+.topT h2,.topT img{
+	float:right;
+}
+
+.topT img{
+	padding: 0 8% 0 0;
+}
+
+.topT h2{
+	font-size: 2em;
+}
+
+.moreProdT{
+	position: relative;
+}
+
+
+.flaNav{
+	width: 100%;
+	position: absolute;
+	z-index: 20;
+}
+
+.flaNav a:first-child{
+	width: 40%;
+	float:left;
+	padding: .5em 2.5% .25em;
+}
+
+.flaNav a:nth-child(2){
+	width: 45%;
+	float:right;
+	padding: .5em 2.5% .25em;
+}
+
+.flaNav img{
+	width: 20%;
+	float:inherit;
+}
+
+.flaNav p{
+	font-size: .75em;
+	color: #ffffff;
+	font-weight: 700;
+	padding: 1em 0;
+	float:inherit;
+}
+
+	
+.leftC, .rightC{
+	position: absolute;
+	z-index:10;
+	width:12%;
+	top:3em;
+}
+	
+.leftC{
+	left:0;
+}
+
+.rightC{
+	right:0;
+}
+
+.cupFla{
+	width:100%;
+	position: relative;
+	margin:1em 0 0 ;
+}
+
+
+.cherryCup{
+	width: 45%;
+	position: absolute;
+	z-index: 10;
+	top: 6em;
+	left: 30%;
+}
+
+
+.cupFla h1{
+	position:absolute;
+	color: #ffffff;
+	font-weight: 700;
+	text-align: center;
+	font-size:6em;
+	bottom:.1em;
+	line-height: 1.3;
+	z-index:1;
+}
+
+.prodDesc{
+	padding: 5em 5% 0;
+}
+
+.prodDesc h1{
+	font-size:2em;
+	font-weight: 700;
+	padding: 0 0 .5em;
+}
+
+
+.ingT{
+	padding: 1.5em 0 .5em;
+}
+
+.ingred{
+	font-size:.75em;
+}
+
+.btn-group{
+	width: 90%;
+	overflow:hidden;
+	margin: 0 auto;
+	
+}
+
+.btn{
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.2em;
+	width: 30%;
+	float:left;
+	margin: 1em 5%;
+	padding: .75em 3%;
+	background: none;
+	border: 2px solid #9B3956;
+	-webkit-box-shadow: inset 1px 1px 18px -4px rgba(84,1,15,1);
+	-moz-box-shadow: inset 1px 1px 18px -4px rgba(84,1,15,1);
+	box-shadow: inset 1px 1px 18px -4px rgba(84,1,15,1);
+	
+}
+
+.active{
+	color:#ffffff;
+    background:#C63054;
+	border: 2px solid #9B3956;
+	-moz-box-shadow: 1px 1px 10px #54010F;
+	-webkit-box-shadow: 1px 1px 10px #54010F;
+	box-shadow: 1px 1px 10px #54010F;
+    }
+
+
+.quant{
+	font-size: 1.3em;
+	padding: .5em 5% 0 5%;
+	float:left;
+}
+
+.num{
+	border: 2px solid #9B3956;
+	padding: 1em 2% .5em 5%;
+	width: 5%;
+	float:left;
+	clear;
+	-moz-box-shadow: 1px 1px 5px #54010F;
+	-webkit-box-shadow: 1px 1px 5px #54010F;
+	box-shadow: 1px 1px 5px #54010F;
+		
+}
+
+.subT{
+	clear:both;
+	padding: 3em 5% 2em;
+}
+
+.subT p{
+	font-size: 1.5em;
+	padding: 2em 5% 0 10% ;
+	float:left;
+}
+
+.subT img{
+	width: 40%
+}
+
+.addTcart{
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.2em;
+	width: 80%;
+	padding:.25em 0;
+	margin: 0 10% 2em;
+	color:#ffffff;
+    background:#C63054;
+	border: 2px solid #9B3956;
+	-moz-box-shadow: 1px 1px 10px #54010F;
+	-webkit-box-shadow: 1px 1px 10px #54010F;
+	box-shadow: 1px 1px 10px #54010F;
+}
+
+
+.recipe{
+	width:80%;
+	clear:both;
+	overflow: hidden;
+	margin: 2em auto;
+}
+	
+.recipe p{
+	text-align: center;
+}
+	
+.recipe img{
+	width:33.3%;
+	float:left;
+}
+
+
+.socialFeed{
+	margin: 3em 0;
+	overflow: hidden;
+}
+
+
+.socialFeed h2{
+	font-weight: 700;
+	text-align: center;
+}
+
+.feed{
+	width: 90%;
+	overflow:hidden;
+	margin: 0 auto;
+	
+}
+
+.feed img{
+	width: 23%;
+	float:left;
+	margin: 1em 1%;	
+}
+
+footer{
+	margin: 2em 0 0;
+	text-align: center;
+	width:100%;
+	padding: .5em 2% 0 2%;
+	font-size: .75em;
+	background-color:#C63054;
+}
+
+.subscribe p{
+	color: #ffffff;
+	text-align: left;
+	width: 90%;
+	padding: 0 0 0 5%;
+	font-size: .9em;
+}
+
+.portNav {
+	top: 0;
+	left: 0;
+	width: 96%;
+	clear:both;
+	padding: 2em 0;
+}
+
+.portNav a{
+	text-decoration: none;
+	margin: .5em .75em;
+	color:#DDDDDD;
+}
+
+.social{
+	width: 40%;
+	margin: 0 auto 3em;
+	overflow: hidden;
+}
+
+.social img{
+        float:left;
+		padding:0 5%;		
+  }
+
+
+.email{
+	border: 1px solid #DAF1EE; 
+	width: 90%;
+	margin: .5em auto;
+	overflow: hidden;
+	padding: .2em 1% .2em 0;
+	background-color:#ffffff;
+}
+
+.email p{
+	float:left;
+	width: 80%;
+	color: #999999;
+	padding: .5em 0 0 1%;
+}
+
+.email img{
+	float: right;
+}
+
+.copy{
+	color: #ffffff;
+	margin: 2em auto 0;
+}
+
+
+
+
+/* Media Query for tablets with at least 768px wide windows */
+@media screen and (min-width:768px)
+{
+	
+.viewM{
+	display:none;
+}
+
+.viewD{
+	display:block;
+}	
+
+	
+}
+
+
+/* Media Query for desktops with at least 1000px wide windows */
+@media screen and (min-width:1000px)
+{
+	
+
+	
+.viewM{
+	display:none;
+}
+
+.viewD{
+	display:block;
+	margin: 0;
+	position: relative;
+}
+
+nav{
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+	}	
+	
+.logo{
+	width: 20%;
+}
+	
+nav li{
+	margin: .25em 10% 0 5%;
+}
+	
+nav ul{
+	width: 10%;
+	margin: 0 2.5%;
+	}
+	
+ul img{
+	width: 100%;
+}
+	
+
+
+
+.hidden1 {
+  position: absolute;
+z-index:10;
+  width: 36.55%;
+  left:.05%;
+  top: 7.7em;
+  text-align: center;
+  opacity: 0;
+  opacity:0;
+}	
+	
+	
+.hidden2 {
+  position: absolute;
+z-index:10;
+  width: 38.54%;
+  left:33.5%;
+  top: .2em;
+  text-align: center;
+  opacity: 0;
+  opacity:0;
+}
+	
+.hidden3 {
+  position: absolute;
+z-index:10;
+  width: 45.4%;
+  left:6.5%;
+  bottom: -9.65em;
+  text-align: center;
+  opacity: 0;
+  opacity:0;
+}	
+
+.hidden4 {
+  position: absolute;
+z-index:10;
+  width: 42%;
+  right:5.6%;
+  bottom: -9.25em;
+  text-align: center;
+  opacity: 0;
+  opacity:0;
+}	
+	
+
+.hidden1:hover, .hidden2:hover, .hidden3:hover, .hidden4:hover{
+  opacity: 1;
+}
+
+	
+.moreProd h2{
+font-size:4em;
+padding: .5em  0 .5em 11%;
+float:left;
+}
+	
+.moreProd p{
+	font-size: 1.5em;
+}
+	
+.top{
+	position: absolute;
+	z-index: 10;
+	top: 6em;
+}
+	
+.top img{
+	width:5%;
+	position: relative;
+	margin: 0 45% 0 0;
+	padding: 1em 0 0 0;
+	}
+
+.moreProdT h2{
+font-size:3em;
+padding: .5em  0 .5em 0;
+float:left;
+}	
+	
+
+#frida, .quote{
+	width: 50%;
+	float:left;
+}
+	
+	
+.topT{
+	position: absolute;
+	z-index: 10;
+	top: 10em;
+	}
+	
+.topT img{
+	width:4%;
+	position: relative;
+	margin: 0 63% 0 0;
+	padding: 1em 0 0 0;
+	}
+	
+
+.flaNav{
+	width: 100%;
+	position: absolute;
+	z-index: 20;
+}
+
+.flaNav a:first-child{
+	width: 20%;
+	left:0;
+	padding: 4em 2.5% .25em;
+}
+
+.flaNav a:nth-child(2){
+	width: 20%;
+	right:0;
+	padding: 4em 2.5% .25em;
+}
+
+.flaNav img{
+	width: 20%;
+	float:inherit;
+}
+
+.flaNav p{
+	font-size: 1em;
+	color: #ffffff;
+	font-weight: 700;
+	padding: 1em 5%;
+	float:inherit;
+}	
+	
+
+
+.cupFla h1{
+	font-size:17em;
+	bottom:0;
+	line-height: 1.2;	
+}
+	
+	
+.cherryCup{
+	width: 30%;
+	z-index: 10;
+	top: 12em;
+	left: 35%;
+}	
+	
+.leftC, .rightC{
+	position: absolute;
+	z-index:10;
+	width:12%;
+	top:8em;
+}
+	
+.leftC{
+	left:0;
+}
+
+.rightC{
+	right:0;
+}
+	
+	
+.prodDesc, .cartDeets{
+	width: 35%;
+	float:left;
+}	
+	
+.prodDesc h1{
+	padding:  0 0 1em;
+}
+	
+.prodDesc img{
+	padding:  1.5em 0;
+}
+	
+.cartDeets{
+	padding: 4em 0 0 20%;
+}
+
+.btn-group{
+	padding: 0 0 2em 0;
+}
+
+.quant{
+padding: .5em 5% 0 10%;
+}
+
+
+.subT{
+	clear:both;
+	padding: 3em 5% 2em;
+}
+
+.subT p{
+	font-size: 1.5em;
+	padding: 2em 5% 0 10% ;
+	float:left;
+	width: 30%;
+}
+
+.subT img{
+	width: 30%
+}
+
+.addTcart{
+	width: 75%;
+	padding:.25em 0;
+	margin: .5em 10% 2em;
+	
+}
+
+	
+.recipe{
+	width:40%;
+	margin: 0 auto;
+	padding: 5em 0;
+}
+	
+.recipe p{
+	text-align: center;
+}
+	
+.recipe img{
+	width:33%;
+	float:left;
+}
+	
+	
+	
+.socialFeed{
+	width: 70%;
+	margin: 0 auto;
+	padding: 3em 0 2em;
+	
+}
+	
+
+footer{
+	position: relative;
+	bottom: 0;
+}
+
+.portNav {
+	width: 100%;
+	padding:2em 0 5em;
+}
+
+.social{
+	float:left;
+	padding: 1.5em 5% 0 25%;
+	width: 20%;
+}
+
+
+.subscribe{
+	float:left;
+	width: 40%;
+}
+
+
+.copy{
+	padding:3em 0 1em 0;
+	width:100%;
+	clear:both;
+}
+	
+	
+	
+
+
+}

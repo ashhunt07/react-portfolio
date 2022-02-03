@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        
+        <!--Don't forget to fill these out!-->
+        <title>HOME | Design Portfolio</title>
+        <meta name="description" content="Ashley's design portfolio!" />
+		<meta name="author" content="">
+        
+        
+        <!--Links to the main Style Sheet-->
+       <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="main.css">
+        
+        <!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers-->
+        <script src="js/modernizr.js"></script>
+        
+        <!--Makes the site so it won't scale down on small devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  	
+		
+		<!-- jQuery library (served from Google) -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        
+     	<script type="text/javascript" src="jquery.mixitup.min.js"></script>
+		
+	
+	
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+  				selectors: {
+    			  target: '.portfolio',
+    			  filter: '.filter'	
+    		  },
+    		  load: {
+      		  filter: '.logo, .icon, .cola, .web, .print, .app'  
+      		}     
+				});								
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+
+       
+        
+           
+        
+	</head>
+
+    <body>
+        
+		
+    <!-- header -->
+	
+		
+			<script src='https://www.google.com/recaptcha/api.js'></script>
+			<div class="form-popup" id="myForm">
+				<div class="form-container">
+							<button type="button" class="btn cancel" onclick="closeForm()">&times;</button>
+					
+						<h2>
+							Tell me about your project!
+						</h2>
+						<p>If you liked any of my work or want to learn more about what design services I can provide, contact me! Just leave your name and email address below with a description of the project you have in mind so we can kick off you design.</p>
+						<form method="post" id="reused_form" >
+							<label for="name">Your Name:</label>
+							<input id="name" type="text" name="Name" required maxlength="50">
+
+							<label for="email">Email Address:</label>
+							<input id="email" type="email" name="Email" required maxlength="50">
+
+							<label for="message">Message:</label>
+							<textarea id="message" type="message" name="Message" rows="10" maxlength="6000" required></textarea>
+							<div class="g-recaptcha" data-sitekey="6Ld-_LoUAAAAAIo1e4YWQ89eYn1FQCr9HHjMJuCl"></div>
+							<button class="button-primary" type="submit" >Send</button>
+						</form>
+						<div id="success_message" style="display:none">
+							<h3>Submitted the form successfully!</h3> 
+							<p> I will get back to you soon. </p>
+						</div>
+						<div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+					</div>
+				
+			</div>
+		
+		
+        <div id="wrapper">
+          
+            <header>
+
+				<div class="nav-fixed">
+
+					
+					<a href="#" onclick="toggle_visibility ('menu');">
+                    <nav class="menu_button nodesk">&#9776;</nav>
+                </a>
+					
+					
+                <nav id="menu">
+		
+                    
+					<ul id="filters" class="clearfix">
+						<li>
+							<a href="index.html"> <img class="mylogo" src="images/ashley-brand-2.png" alt="Ashley Hunt Design logo"/> <p class="webname">Designed By Ash</p> </a>
+						</li>
+					
+						
+						<li><span class="filter active" data-filter=".logo, .icon, .cola, .web, .print">All</span></li>
+						<li><span class="filter" data-filter=".logo">Branding</span></li>
+						<li><span class="filter" data-filter=".icon">Icons</span></li>
+						<li><span class="filter" data-filter=".cola">Collateral</span></li>
+						<li><span class="filter" data-filter=".web">Web</span></li>
+						<li><span class="filter" data-filter=".print">Print</span></li>
+						<li><span class="filter" data-filter=".app">App</span></li>
+						
+		
+						<li>
+							
+							<button class="button-primary" onclick="openForm()">Contact</button>
+
+				
+						</li>
+                    </ul>
+                 </nav>
+
+				</div>
+      
+                
+            </header>   
+			
+			
+		
+
+
+            
+    <!-- header -->
+			
+			
+			<main>
+				
+
+
+		<div id="portfoliolist">
+				
+				<!-- Photo Grid -->
+				<div class="grid">
+					
+					<div class="row"> 
+					 
+						
+<!--Column Start-->
+						
+						<div class="column">
+						  
+						  
+						  <div class="portfolio icon" data-cat="icon">
+							<div class="portfolio-wrapper">				
+								<img src="images/coo_icons1.jpg" alt="Coo Icon System – Business Types" onclick="myFunction(this);"/>
+								<div class="label">
+									<div class="label-text">
+										<h3>COO Icon System</h3>
+										<h4>Icons</h4>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>	
+						  
+						  	  <div class="portfolio app" data-cat="app">
+							<div class="portfolio-wrapper">			
+								<img src="images/acheive_header.jpg" alt="Acheive Children's App Design" onclick="myFunction(this);"/>
+								<div class="label">
+									<div class="label-text">
+									<h3>Achieve</h3>
+										<h4>App Design</h4>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>	
+						  
+						  <div class="portfolio print" data-cat="print">
+							<div class="portfolio-wrapper">			
+								<img src="images/gp_care-card2.jpg" alt="Garden Party Plant Care Cards" onclick="myFunction(this);" />
+								<div class="label">
+									<div class="label-text">
+									<h3>Garden Party</h3>
+										<h4>Print</h4>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>		
+						
+
+					  
+						
+						</div>
+					  
+<!--Column Start-->
+						
+						
+						<div class="column">
+						
+						  <div class="portfolio web" data-cat="web">
+							<div class="portfolio-wrapper">			
+								<img src="https://images.pexels.com/photos/1106452/pexels-photo-1106452.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="I'm a Lion" onclick="myFunction(this);" />
+								<div class="label">
+									<div class="label-text">
+									<h3>Click Here</h3>
+										<h4>Logo</h4>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>	
+						  
+					
+						
+						  <div class="portfolio icon" data-cat="icon">
+							<div class="portfolio-wrapper">			
+								<img src="images/coo_icons2-2.jpg" alt="Coo Icons System – Interests" onclick="myFunction(this);" />
+								<div class="label">
+									<div class="label-text">
+									<h3>COO App Interests</h3>
+										<h4>Icons</h4>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>	
+						  
+						</div>
+						  
+						
+						
+
+<!--Column Start-->
+						
+						
+						<div class="column">
+						
+						  <div class="portfolio web" data-cat="web">
+							<div class="portfolio-wrapper">			
+								<img src="https://images.pexels.com/photos/1106452/pexels-photo-1106452.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="I'm a Lion" onclick="myFunction(this);" />
+								<div class="label">
+									<div class="label-text">
+									<h3>Click Here</h3>
+										<h4>Logo</h4>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>	
+						  
+					
+						
+						  <div class="portfolio icon" data-cat="icon">
+							<div class="portfolio-wrapper">			
+								<img src="images/coo_icons2-2.jpg" alt="Coo Icons System – Interests" onclick="myFunction(this);" />
+								<div class="label">
+									<div class="label-text">
+									<h3>COO App Interests</h3>
+										<h4>Icons</h4>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>	
+						  
+						</div>
+						  
+
+						
+					
+					 
+<!--Column Start-->						
+						
+						<div class="column">
+						
+						  
+						  <div class="portfolio web" data-cat="web">
+							<div class="portfolio-wrapper">			
+								<img src="https://images.pexels.com/photos/1106452/pexels-photo-1106452.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" onclick="myFunction(this);" />
+								<div class="label">
+									<div class="label-text">
+									<h3>Speciallisterne</h3>
+										<h4>Logo</h4>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>	
+						  
+						  
+					
+						
+						  <div class="portfolio cola" data-cat="cola">
+							<div class="portfolio-wrapper">			
+								<img src="https://images.pexels.com/photos/1106452/pexels-photo-1106452.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" onclick="myFunction(this);" />
+								<div class="label">
+									<div class="label-text">
+									<h3>Speciallisterne</h3>
+										<h4>Logo</h4>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>	
+						  
+						  
+					 
+								</div>
+							</div>
+						</div>
+					</div>
+		
+					
+			<div class="container">
+			  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+			  <img id="expandedImg">
+			  <div id="imgtext"></div>
+			</div>
+				
+			
+			</main>
+         
+            
+<!-- footer               
+              <footer>
+				
+				<h6 class="footright">coded by: Ashley Hunt</h6>
+				
+				<h6 class="footright">ashleyhuntdesign@gmail.com</h6>
+				
+
+            </footer>
+             
+end footer-->
+            
+       </div><!-- end wrapper -->     
+            
+<!--Javascript/JQuery start here-->
+        
+        
+<!--JAVA-->        
+        
+
+        <script type="text/javascript">
+        
+        function toggle_visibility(id) {
+            var e = document.getElementById(id);
+            if(e.style.display == 'block')
+                e.style.display = 'none';
+            else
+                e.style.display = 'block';
+        }
+            
+    </script>  
+		
+		
+        
+		
+		
+		<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+  
+		
+		
+		
+		<script>
+			function myFunction(imgs) {
+			  var expandImg = document.getElementById("expandedImg");
+			  var imgText = document.getElementById("imgtext");
+			  expandImg.src = imgs.src;
+			  imgText.innerHTML = imgs.alt;
+			  expandImg.parentElement.style.display = "block";
+			}
+			</script>
+
+  
+	
+    </body>
+</html>

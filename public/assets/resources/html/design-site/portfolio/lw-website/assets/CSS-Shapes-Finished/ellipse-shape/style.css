@@ -1,0 +1,33 @@
+/* Setup */
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+.main {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	line-height: 28px;
+	font-size: 18px;
+}
+
+/* Manual Ellipse Shape */
+
+/*.my-ellipse {
+	shape-outside: ellipse(167.5px 247px);
+	width: 335px;
+	height: 494px;
+	float: left;
+}*/
+
+/* Percentage Ellipse Shape */
+
+.my-ellipse {
+	shape-outside: ellipse(50%);
+	width: 335px;
+	height: 494px;
+	float: left;
+}

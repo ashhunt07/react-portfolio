@@ -1,0 +1,121 @@
+
+/**
+ * BxSlider v4.0 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2012
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+	max-width: 100%;
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	margin: 0 auto;
+	overflow:scroll;
+	
+}
+
+.bx-wrapper img {
+	min-width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position:absolute;
+	bottom: 0;
+	width: 18%;
+	margin: 0 40%;
+}
+
+
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(images/bx_loader.gif) center center no-repeat #fff;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+/* PAGER */
+
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+}
+
+.bx-pager.bx-default-pager a {
+	background: #666;
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	outline: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #000;
+	bottom:0;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+	height: 100%;
+	background: url(images/left-reg.png)no-repeat 0;
+	transition:.6s;
+}
+
+.bx-wrapper .bx-next {
+	right: 0;
+	height: 100%;
+	background: url(images/right-reg.png) no-repeat 0;
+	transition:.6s;
+}
+
+.bx-wrapper .bx-prev:hover {
+	background:url(images/left-hover.png)no-repeat 0;
+}
+
+.bx-wrapper .bx-next:hover {
+	background:url(images/right-hover.png)no-repeat 0;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 0;
+	outline: 0;
+	width: 2rem;
+	text-indent: -9999px;
+	z-index: 50;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}

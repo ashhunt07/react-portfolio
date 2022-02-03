@@ -1,0 +1,822 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Meyer Reset CSS */
+
+img {
+	max-width: 100%; /*makes images scale with flexible grids*/
+	display: block; /*removes tiny space added in some browsers below images */
+}
+iframe {
+	max-width: 100%; /*makes images scale with flexible grids*/
+	display: block; /*removes tiny space added in some browsers below images */
+}
+
+/* Your CSS Starts here */
+/* Place google fonts code here */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
+/* Place google fonts code here */
+
+body{
+	max-width:800px;
+	width:100%;
+}
+
+html{
+	background: url(images/lb_background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+}
+/*
+html{
+	background: url(images/lb_background-m.jpg) repeat fixed; 
+}*/
+
+/* Divs start here */
+
+h1,h2,h3,h4,h5,a,p{
+	font-family: 'Source Sans Pro', sans-serif;
+    font-style:normal;
+    text-decoration:none;
+}
+
+a{
+    color:#071438;
+}
+
+p{
+    font-size:.75em;
+    color:#000000;
+    margin-bottom: em;
+	line-height: 150%;
+    }
+
+/*Quotes*/
+h5{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: .6em;
+	text-align:center;
+	line-height: 180%;
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*Prices*/
+h6{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 3em;
+}
+
+
+wrapper{
+    margin: 0 auto; /* zero for top/bottom and auto for left/right */
+}
+
+
+header{
+    width: 100%;
+    padding: 2em 0; /* 15 / 12 */
+	position:relative;
+	overflow:hidden;
+}
+
+.indexLogo{
+		width: 90%;
+		margin: 3em 5% 1em;
+	}
+	
+.logoRest{
+		margin: 1em 19% 0;
+		width: 60%;
+	}
+
+
+.menu_button{
+	height: 1.2em;
+	width: 5%;
+	padding: 0 5%;
+	position: absolute;
+	font-size: 2em;
+	color:#071438;
+	z-index: 10;
+	background: none;
+	
+}
+
+#menu{
+	height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    top:0;
+    left: 0;
+    background-image: url("images/lb_background.jpg");
+	overflow-x: hidden;
+}
+
+#menu ul {
+	margin:2em 0 0 ;
+	padding: 3em;
+	color:#071438;
+   
+}
+
+
+#menu a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #071438;
+    display: block;
+    transition: 0.3s;
+}
+
+#menu a:hover, #menu a:focus {
+    color: #f1f1f1;
+}
+
+
+hr{
+	width: 90%;
+	float:left;
+	margin-bottom: 2em;
+}
+
+.subMenu a{
+	display:block;
+	font-size: 1em;
+}
+
+
+.subMenu input[type=text]{
+	background-color:  rgba(255, 255, 255, 0);
+	border: .5px solid #071438;
+	width: 90%;
+	height: 2em;
+	margin-bottom: 1em;
+}
+
+
+#menu{
+	display:none;
+}
+
+
+#menuD{
+	display:none;
+}
+
+
+/*CART CART CART CART CART*/
+/*CART CART CART CART CART*/
+/*CART CART CART CART CART*/ß
+/*CART CART CART CART CART*/
+
+#cart{
+	float:right;
+}
+
+.cartPop{
+	float:right;
+	padding-right: 5%;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 11; 
+    right: 0;
+    top: 0;
+    background-color: #fff; 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+}
+
+
+.overlay-content {
+    position: relative;
+    top: 0; 
+	float: right;
+    width: 100%; 
+	height: 100%;
+    margin-top: 1em; 
+}
+
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; 
+    transition: 0.3s; 
+}
+
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+
+.overlay .closebtn {
+	margin: 0 0 0 80%;
+    position: absolute;
+    top:0;
+    font-size: 60px;
+}
+
+.cartT {
+    position: absolute;
+	overflow:hidden;
+	top: 4em;
+	width: 50%;
+}
+
+.cartT img{
+	float:left;
+	padding: 0 0 0 15%;
+}
+
+.cartT h6{
+	font-size:1.5em;
+	padding:.3em 0 0 2%;
+	float:left;
+}
+
+.cartItem{
+	position:relative;
+	width: 90%;
+	overflow:hidden;
+	top: 8em;
+	padding: 1em 0 0 5%;
+	clear:both;
+}
+
+.tiny{
+	width: 30%;
+	float: left;
+	padding: 0 5% 0 0; 
+}
+
+.cartItem p{
+	font-size: 1.5em;
+	padding: .25em 0;
+}
+
+.choice{
+	float: left; 
+}
+
+.carPri{
+	float:right;
+}
+
+.carSub{
+	text-align: right;
+	margin: 0 0 0 5%;
+}
+
+.check{
+	position:relative;
+	clear:both;
+	width: 80%;
+	padding: 1em 0;
+	top: 12em;
+	margin: 0 10%;
+	background:-webkit-gradient(linear, 100% 21%, 31% 48%, from(#4F5872), to(#071438));
+	color:#ffffff;
+	border-radius: 3px;
+	
+}
+
+.shipping{
+	font-size: .75em;
+	float:right;
+}
+
+/*CART CART CART CART CART*/
+/*CART CART CART CART CART*/
+/*CART CART CART CART CART*/
+/*CART CART CART CART CART*/
+
+
+
+
+
+/*Main Body*/
+
+
+
+main{
+	background-color:#ffffff;
+    width:100%;
+    line-height: 180%;
+    font-size: 1em;
+	  -webkit-box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.4);;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	  -moz-box-shadow:2px 2px 8px 4px rgba(0, 0, 0, 0.4);;  /* Firefox 3.5 - 3.6 */
+	  box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.4);;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+
+
+section{
+	margin: 0 auto;
+    width:88%;
+    clear:both;
+    padding: 0.8333333333333333em 3%; /*10/12*/ 
+    overflow:hidden;
+}
+
+#lgProd{
+	margin: 2em 0 0;
+}
+
+.lgAdd{
+	float: left;
+	width: 88.6%;
+}
+
+.add{
+	height: 100%;
+	float: right;
+	padding: 16em 0 1em;
+}
+
+.title h6{
+	width: 25%;
+	float:left;
+	line-height: 1em;
+}
+
+.title p{
+	width: 70%;
+	font-size:1.5em;
+	line-height: 2.8em;
+}
+
+.descrpt{
+	padding: 0 0 3em;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.prod{
+	padding: 2em 2% 0;
+	width:45%;
+	float: left;
+}
+
+.sm{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.prod h6{
+	font-size:1.25em;
+	float: left;
+}
+
+.prod p{
+	padding:0 5%;
+	line-height: 2.8em;
+	float:left;
+}
+
+.smadd{
+	float: right;
+	width: 10%;
+	padding-top: 0.3125em; /* 5/ 16 */
+	
+}
+
+.shAll{
+	margin: 2em 10% 1em;
+	width: 80%;
+	padding: .3em 0;
+	background:-webkit-gradient(linear, 100% 21%, 31% 48%, from(#4F5872), to(#071438));
+	color:#ffffff;
+	border-radius: 3px;
+}
+
+.footAll{
+	position: absolute;
+	z-index:1;
+	width: 100%;
+	overflow:hidden;
+}
+
+footer{  
+    font-size: 0.75em; /*12/16*/
+}
+
+#footNav{
+	padding: 2.5em 0 4em;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 95%;
+}
+
+#footNav a{
+	padding: 0 4.2% 0;
+	display: inline-block;
+	float: left;
+	font-weight: 700;
+	font-size:.8em;
+}
+
+footer p{
+	text-align: center;
+}
+
+.madeIn{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 1em;	
+}
+
+.social{
+	overflow: hidden;
+	width: 30%;
+	margin: 1em auto 3em;
+}
+
+.social img{ 
+	float:left;
+	display: inline-block;
+}
+
+.mailList{
+	clear: both;
+	padding: 1em 0;
+}
+
+.mailList input[type=text]{
+	width: 60%;
+	margin: .5em 1% 0 10%;
+	padding: .75em;
+	border-radius: 3px;
+	border: none;
+}
+
+.mailList button{
+	background:-webkit-gradient(linear, 100% 21%, 31% 48%, from(#4F5872), to(#071438));
+	color:#ffffff;
+	border-radius: 3px;
+	border: none;
+	padding: 1em;
+	font-size: .75em
+}
+
+.backgroundF{
+	position:absolute;
+	z-index: 0;
+}
+
+/* Media Query for tablets with at least 768px wide windows */
+@media screen and (min-width:768px)
+{
+
+	body{
+		margin: 0 auto;
+	}
+	
+	.indexLogo{
+		width: 60%;
+		margin: 2em 20% 0;
+	}
+	
+	.logoRest{
+		margin: 0 30%;
+		width: 40%;
+	}
+
+	.lgAdd{
+	float: left;
+	width: 94%;
+}
+
+	.add{
+		float: right;
+		padding: 33em 0 3em;
+	}
+    
+}
+/* Media Query for desktops with at least 1000px wide windows */
+@media screen and (min-width:1200px)
+{
+
+	
+	body{
+		margin: 0 auto;
+	}
+	
+	wrapper{
+		width: 100%;
+		max-width: 1200px;
+	}
+
+	h5{
+		width: 65%;
+		font-size: .75em;
+	}
+	
+	
+	hr{
+		display:none;
+	}
+	
+	.subMenu{
+		display:none;
+	}
+	
+	
+	.indexLogo{
+		width: 60%;
+		margin: 2em 20% 0;
+	}
+	
+	.logoRest{
+		margin: 0 30%;
+		width: 40%;
+	}
+	
+	
+	.menu_button{
+		display:none;
+	}
+	
+	
+	#menu{
+		display:none;
+	}
+	
+	
+	#menuD{
+		margin: 3em 30% 0;
+		display:block;
+		width: 40%;
+	}
+	
+	#menuD a{
+		display: inline-block;
+		padding 0 20%;
+		width: 30%;
+		text-align: center;
+	}
+	
+	
+	.cart{
+		float:right;
+		padding-right: 0;
+	}	
+
+	.overlay {  
+		height: 100%;
+		width: 0;
+		position: fixed; 
+		z-index: 1; 
+		right: 0;
+		top: 0;
+		background-color: rgb(7, 20, 56); 
+		background-color: rgba(7, 20, 56, 0.8); 
+		overflow-x: hidden; 
+		transition: 0.5s; 
+		}
+
+
+	.overlay-content {
+		position: relative;
+		top: 5%; 
+		float: right;
+		width: 30%; 
+		height: 100%;
+		margin-top: 30px; 
+		background-color:white;
+	}
+
+
+	.overlay a {
+		padding: 8px;
+		text-decoration: none;
+		font-size: 36px;
+		color: #818181;
+		display: block; 
+		transition: 0.3s; 
+	}
+
+	/
+	.overlay a:hover, .overlay a:focus {
+		color: #f1f1f1;
+	}
+
+
+	.overlay .closebtn {
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		font-size: 60px;
+	}
+
+	
+	main{
+		margin: 1em 0 0;
+	}
+	
+	.lgAdd{
+	float: left;
+	width: 94%;
+}
+
+	.add{
+		float: right;
+		padding: 33em 0 1em;
+	}
+
+	.title h6{
+		width: 15%;
+		float:left;
+		line-height: 1em;
+}
+	
+	.descrpt{
+		width: 70%
+	}
+	
+	.prod{
+		width: 40%;
+		padding: 3em 5%;
+	}
+	
+	.prod h6{
+		font-size: 2em;
+	}
+	
+	.prod p{
+		font-size: 1em;
+	}
+	
+	.shAll{
+		margin: 6em 20% 3em;
+		padding: .75em 0;
+		width: 60%;
+		font-size: .75em;
+	}
+
+	footer{ 
+		position:relative;
+		width: 100%;
+		max-width: 1200px;
+		font-size: 0.75em; /*12/16*/
+	}
+	
+	.left{
+		width: 40%;
+		float: left;
+		margin: 2em 0 0 0;
+	}
+
+	.right{
+		width:60%;
+		float:left;
+		margin: 5em 0 0 0;
+	}
+	
+	footAll{
+		position: relative;
+	}
+	
+	.backgroundF{
+		display:none;
+	}
+
+	
+	#footNav{
+		float: left;
+		overflow: hidden;
+		width: 100%;
+		
+	}
+
+	#footNav a{
+		display:block;
+		padding: .5em 0;
+		width: 100%;
+		font-weight: 700;
+		font-size:1em;
+		
+	}
+
+	.madeIn{
+		position:absolute;
+		z-index: 10;
+		font-family: 'Ubuntu Condensed', sans-serif;
+		font-size: 1em;
+		width: 20%;
+		margin: 3em 40%;
+	}
+
+	.social{
+		float:right;
+		width: 35%;
+		margin: 1em;
+	}
+
+	.social img{ 
+		float:left;
+		display: inline-block;
+		padding: 0 4%
+	}
+
+	.mailList{
+		
+		clear: both;
+		float: right;
+		width: 100%;
+		padding: 1em 0;
+	}
+	
+	.mailList p{
+		text-align: right;
+	}
+
+	.mailList input[type=text]{
+		width: 60%;
+		margin: .5em 0 0 20%;
+		padding: .75em;
+		border-radius: 3px;
+		border: none;
+	}
+
+	.mailList button{
+		background:-webkit-gradient(linear, 100% 21%, 31% 48%, from(#4F5872), to(#071438));
+		color:#ffffff;
+		border-radius: 3px;
+		border: none;
+		padding: 1em 2em;
+		font-size: .75em;
+		margin: .5em 0;
+		float:right;
+	}
+	
+	
+	.coRi{
+		position:absolute;
+		z-index: 10;
+		font-size: .5em;
+		width: 20%;
+		margin:1em 40%;
+		bottom: 0;
+	}
+
+
+	
+}

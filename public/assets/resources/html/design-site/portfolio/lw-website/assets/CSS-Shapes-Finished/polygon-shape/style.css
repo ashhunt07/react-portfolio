@@ -1,0 +1,24 @@
+/* Setup */
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+.main {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	line-height: 28px;
+	font-size: 18px;
+}
+
+/* Polygon Shape */
+
+.my-polygon {
+	shape-outside: polygon(0px 0px, 380px 0px, 303px 167px, 335px 300px, 0px 300px);
+	width: 382px;
+	height: 300px;
+	float: left;
+}
